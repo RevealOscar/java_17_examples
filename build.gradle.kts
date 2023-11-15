@@ -5,3 +5,33 @@
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/8.1.1/samples
  * This project uses @Incubating APIs which are subject to change.
  */
+
+plugins {
+    // Apply the java plugin to add support for Java
+    java
+}
+
+java {
+    // This is the JDK to use for compiling the project.
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    // Use JUnit Jupiter API for testing.
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
+
+    // Use JUnit Jupiter Engine for testing.
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.1")
+}
+
+tasks.test {
+    // Use junit platform for unit tests.
+    useJUnitPlatform()
+}
