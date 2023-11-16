@@ -1,4 +1,4 @@
-package sealed_classes;
+package Sealed_Classes_Example;
 
 import java.util.logging.Logger;
 

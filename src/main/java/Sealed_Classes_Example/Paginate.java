@@ -1,4 +1,4 @@
-package sealed_classes;
+package Sealed_Classes_Example;
 
 sealed interface Paginate permits PaginateImpl {
     void clickNext();

@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import sealed_classes.Widget;
+import Sealed_Classes_Example.Widget;
 
 public class sealed_classes_test {
 
